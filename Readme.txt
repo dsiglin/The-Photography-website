@@ -1,5 +1,7 @@
 This is my take on a full-viewport, responsive UI photography portfolio site. It's free for the taking and remaking under the MIT License. It relies on Fullpage.js, a wonderful jquery plugin by Alvaro Trigo. The version of Fullpage.js included in this site is slightly modified but if you wish to use the vanilla version of Fullpage.js that should work fine. 
 
+This project is in need of CSS/HTML refinement and cleanup which will occur when I get around to it. If you are reading this that means I'm not done yet. If you want to contribute and help me clean the code up, awesome! I appreciate any help.
+
 Besides Alvaro I want to thank Aaron Dickey and Dan Dietz for their feedback on the UI of the site. I'm also indebted to Dan Jeffords for letting me field numerous javascript questions.
 
 Oh, for for the image slideshow on the first section I used Backstretch. For the animation on visibility I used ViewportChecker.
