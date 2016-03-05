@@ -1,0 +1,1914 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>DAVID SIGLIN PHOTOGRAPHY</title>
+    <meta name="author" content="David Siglin">
+    <meta name="description" content="A collection of landscape, portrait, and travel photography">
+    <meta name="keywords"  content="photography,photo,portrait,landscape,travel,lifestyle,picture,wedding,portraiture">
+    <meta name="Resource-type" content="Document">
+    <meta content="True" name="HandheldFriendly">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui, user-scalable=0">
+    <meta name="theme-color" content="#4c4c4c">
+
+    <link href="/img/favicon.ico" rel="icon" type="image/x-icon">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <!--<script src="js/vegas.min.js" type="text/javascript"></script>-->
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script src="js/jquery.fullPage.js" type="text/javascript"></script>
+
+    <script src="js/jquery.viewportchecker.min.js" type="text/javascript"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Advent+Pro:400,300,500' rel='stylesheet' type='text/css'>
+
+    <link href="css/jquery.fullPage.css" rel="stylesheet" type="text/css">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/overlaymenu.css" rel="stylesheet" type="text/css">
+    <!--<link href="css/animate.css" rel="stylesheet" type="text/css"/>-->
+    <link  href="css/vegas.min.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+                $('#fullpage').fullpage({
+            scrollingSpeed: 800,
+            fitToSection: true,
+            fitToSectionDelay: 400,
+            css3: true,
+            scrollBar: false,
+            autoScrolling: false,
+            touchSensitivity: 15,
+            controlArrows: true,
+            recordHistory: true,
+            keyboardScrolling: false,
+            animateAnchor: true,
+            sectionSelector: '.section',
+            slideSelector: '.slide',
+            slidesNavigation: true,
+            slidesNavPosition: 'bottom',
+            sectionsColor : ['#1c1c1c', '#20282d', '#20282d', '#20282d', '#20282d', '#20282d', '#20282d',],
+            verticalCentered: false,
+            anchors:['Home', 'Intro', 'Lifestyle', 'Street', 'Travel', 'Projects', 'Connect',],
+            menu: '#mymenu',
+
+            onLeave: function(index, nextIndex, direction) {
+                var destination = $('.fp-section').eq(nextIndex - 1);
+
+                if(destination.hasClass('nofittosection')){
+                   $.fn.fullpage.setFitToSection(false);
+                   console.log("setting fitToSection off");
+                }else{
+                    $.fn.fullpage.setFitToSection(true);
+                    console.log("setting fitToSection on");
+                }
+            }
+
+            }); 
+        }); 
+    </script>
+
+     <script type="text/javascript">
+         (window).setTimeout(function() 
+           {
+             $(".cover_image").backstretch([
+                "https://s3.amazonaws.com/davidsiglinphotography/cover4.jpg"
+               , "https://s3.amazonaws.com/davidsiglinphotography/cover3.jpg"
+               , "https://s3.amazonaws.com/davidsiglinphotography/cover5.jpg"
+               , "https://s3.amazonaws.com/davidsiglinphotography/cover8.jpg"
+               , "https://s3.amazonaws.com/davidsiglinphotography/cover9.jpg"
+             ], {
+                duration: 7000, 
+                transitionDuration: 1000,
+                transition: 'fade',
+             });
+           }, 7000);
+      </script>
+
+
+
+    <!--<script type="text/javascript">
+        (window).setTimeout(function() 
+          {
+            var imagecollection = [
+                {src: "https://s3.amazonaws.com/davidsiglinphotography/cover4.jpg"},
+                {src: "https://s3.amazonaws.com/davidsiglinphotography/cover3.jpg"},
+                {src: "https://s3.amazonaws.com/davidsiglinphotography/cover5.jpg"},
+                {src: "https://s3.amazonaws.com/davidsiglinphotography/cover8.jpg"},
+                {src: "https://s3.amazonaws.com/davidsiglinphotography/cover9.jpg"}
+                /* Slideshow not working? Check your image links. */
+            ];
+
+            $(".cover_image").vegas({
+                slides: imagecollection,
+                transition: 'fade',
+                cover: true,
+                timer: false,
+                shuffle: false,
+                delay: 15000,
+                transitionDuration: 1000,
+            });
+          }, 15000);
+     </script>-->
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.slide_main_paragraph_container').addClass("hidden").viewportChecker({
+                classToAdd: 'visible fadeIn', // Class to add to the elements when they are visible
+                offset: 0  
+               });
+
+            $('.slide_main_category_container').addClass("hidden").viewportChecker({
+                classToAdd: 'visible fadeIn', // Class to add to the elements when they are visible
+                offset: 0  
+               });
+
+            $('.fp-controlArrow.fp-prev').addClass("hidden").viewportChecker({
+                classToAdd: 'visible fadeInUpShort', // Class to add to the elements when they are visible
+                offset: 0   
+               });
+            $('.fp-controlArrow.fp-next').addClass("hidden").viewportChecker({
+                classToAdd: 'visible fadeInUpShort', // Class to add to the elements when they are visible
+                offset: 0   
+               });
+            $('.about_text_large').addClass("hidden").viewportChecker({
+                classToAdd: 'visible fadeIn', // Class to add to the elements when they are visible
+                offset: 0   
+               });
+        });            
+    </script>
+
+    <script type="text/javascript" defer>
+    $(document).ready(function() {
+
+        $('a.slide_menuicon_wrapper').click(function(event) {
+            event.preventDefault();
+            if($('.slide.active > div > nav.drop_down_menu').hasClass('visibility_true')) {
+                $('.slide.active > div > nav.drop_down_menu').removeClass('visibility_true');
+                //$('.navigation').hide();
+                //$('.navigation li').removeClass('small-padding');
+            } else {
+                $('.slide.active > div > nav.drop_down_menu').addClass('visibility_true');
+                //$('.navigation').fadeIn();
+                //$('.navigation li').addClass('small-padding');
+            }
+            $('.slide.active > div > img').toggleClass('gray');
+            $('.slide.active > div > .projects_info').toggleClass('gray');
+        });
+  
+    });
+    </script>
+
+    <script type="text/javascript" defer>
+    $(document).ready(function() {
+        $('nav.drop_down_menu').click(function(event) {
+            $('.slide.active > div > nav.drop_down_menu').toggleClass('visibility_true');
+            $('.slide.active > div > img').removeClass('gray');
+            $('.slide.active > div > .projects_info').removeClass('gray');
+        });
+      });
+    </script>
+
+    <title>
+        David Siglin Photography
+    </title>
+
+</head>
+
+<body>
+    <nav id="mymenu" div class="animated fadeInUp">
+        <!--<a class="bottomborder" data-menuanchor="Home" href="#Home">
+            <div class="mymenu_text">HOME</div>
+        </a>-->
+
+        <a class="bottomborder" data-menuanchor="Intro" href="#Intro">
+            <div class="mymenu_text">INTRO</div>
+        </a>
+
+        <a class="bottomborder" data-menuanchor="Lifestyle" href="#Lifestyle">
+            <div class="mymenu_text">LIFESTYLE</div>
+        </a>
+
+        <a class="bottomborder" data-menuanchor="Street" href="#Street">
+            <div class="mymenu_text">STREET</div>
+        </a>
+
+        <a class="bottomborder" data-menuanchor="Travel" href="#Travel">
+            <div class="mymenu_text">TRAVEL</div>
+        </a>
+
+        <a class="bottomborder" data-menuanchor="Projects" href="#Projects">
+            <div class="mymenu_text">PROJECTS</div>
+        </a>
+
+        <a class="bottomborder" data-menuanchor="Connect" href="#Connect">
+            <div class="mymenu_text">CONNECT</div>
+        </a>
+    </nav>
+
+
+    <div id="fullpage">
+        <div class="section">
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="cover_border_thinner">
+                    </div>
+                    <div class="cover_gradiant">
+                    </div>
+                    <div class="signature_home">
+                    </div>
+                    <div class="cover_image">
+                    </div>
+
+                    <div class="left_yellow_vertical_bar_home">
+                    </div>
+
+                    <div class="home_main_category_and_description_container animated fadeInUp">   
+                            <div class="home_category_text animated">
+                                HUMAN MOMENTS
+                            </div>
+                            <div class="home_myname_description_photographer">
+                                &amp; experiences
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /slide -->
+        </div>
+        <!--section-->
+        <!-- end of section -->
+
+        <div class="section">
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="body_border_thinner">
+                    </div>
+                    <div class="slide_main_background_about">
+                    </div>
+                    <div class="about_wrapper">
+                        <div class="about_category_text ">
+                            A SENSE OF<br/>HUMANITY
+                        </div>
+                        <div class="about_text_large">
+                            Welcome, my name is David Siglin and in the following pages you&#39;ll find a collection of moments that capture the intimate and the grandiose, that give a sense of person and place. For example &mdash; the joys of a child's first birthday, the surprises of an Italian fish market, and the beauties of sunrise at the world's edge. Human moments and experiences are the soul of my work. I hope that the following photos and stories inspire you with your work, whatever that might be.
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="me">
+                </div>-->
+            </div>
+        </div>
+
+        <div class="section">
+            <!--<div class="slide">
+                <div class="slide_main_container">
+                <div class="body_border_thinner">
+                </div>
+                    <div class="slide_main_background_lifestyle">
+                    </div>
+                    <div class="slide_main_wording_wrapper">
+                        <div class="slide_main_sense_container">
+                            <div class="sense_text">
+                                A SENSE<br>
+                                OF PERSON
+                            </div>
+                        </div>
+
+
+                        <div class=
+                        "slide_main_category_and_description_container">
+                            <div class=
+                            "slide_main_category_container category_text">
+                                LIFESTYLE &amp; PORTRAIT
+                            </div>
+
+
+                            <div class=
+                            "slide_main_paragraph_container slide_main_paragraph_text">
+                            The science of light frames the
+                            creative space that is photography &mdash; a
+                            perfect blend of art and science. Add a human
+                            subject and you have a relational element as well.
+                            Whether it&#39;s a mother to a
+                            daughter, or the subject to the photographer
+                            themselves &mdash; the ability to capture a human moment is a science and art unto
+                            itself. These following photos are a few human moments I've been privilidged to capture.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="body_border_thinner">
+                    </div>
+                    <div class="slide_main_background_lifestyle">
+                    </div>
+                    <div class="about_wrapper">
+                        <div class="about_category_text ">
+                        A SENSE OF<br>
+                        PERSON
+                        </div>
+                        <div class=
+                        "slide_main_category_container category_text">
+                            LIFESTYLE &amp; PORTRAIT
+                        </div>
+                        <div class="about_text_large">
+                        The science of light frames the creative space that is photography &mdash; a perfect blend of art and science. Add a human subject and you have a relational element as well. Whether it&#39;s a mother to a daughter, or the subject to the photographer themselves &mdash; the ability to capture a human moment is a science and art unto itself. These following photos are a few human moments I've been privilidged to capture.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                               <!-- <a class="social_buttons" href="" target="_blank">download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/205f8" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/d4b54" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/pinlifestyle1" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="piece_title">
+                        A PORTRAIT OF MOTHERHOOD
+                    </div>                
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="adjust_imagemode">
+                        -
+                    </div>
+                    <img class="lifestyle2 adjust">
+                    <div class="slides_gradiant_bottom_heavy" id="gradiant">
+                    </div>
+                   <div class="portraitwarning">
+                   rotate device
+                   </div>
+                </div>
+            </div>
+
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                               <!-- <a class="social_buttons" href="" target="_blank">download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/08c0d" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/bd25d" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/lifestyle2pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="piece_title">
+                        THE FIRST TASTE OF CAKE
+                    </div>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="adjust_imagemode">
+                        -
+                    </div>
+                    <img class="lifestyle9 adjust">
+                    <div class="slides_gradiant_bottom" id="gradiant">
+                    </div>
+                    <div class="portraitwarning">
+                    rotate device
+                    </div>
+               </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                              <!--  <a class="social_buttons" href="" target="_blank">download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/dbda2" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/db1a8" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/lifestyle3pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="piece_title">
+                        MY FATHER
+                    </div>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="adjust_imagemode">
+                        -
+                    </div>
+                    <img class="lifestyle7 adjust">
+                    <div class="slides_gradiant_bottom" id="gradiant">
+                    </div>
+                    <div class="portraitwarning">
+                    rotate device
+                    </div>
+                </div> 
+            </div>
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                               <!-- <a class="social_buttons" href="" target="_blank">download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/1aabd" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/eaa3" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/lifestyle5pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="piece_title">
+                        THE MUSE
+                    </div>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="adjust_imagemode">
+                        -
+                    </div>
+                    <img class="lifestyle1 adjust">
+                    <div class="slides_gradiant_bottom" id="gradiant">
+                    </div>
+                    <div class="portraitwarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                              <!--  <a class="social_buttons" href="" target="_blank">download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/c8d62" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/6f73" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/lifestyle6pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="piece_title">
+                        PORTRAIT OF A ROCKER
+                    </div>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a>
+                    <div class="adjust_imagemode">
+                        -
+                    </div>
+                    <img class="lifestyle3 adjust">
+                    <div class="slides_gradiant_bottom" id="gradiant">
+                    </div>
+                    <div class="portraitwarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                               <!-- <a class="social_buttons" href="" target="_blank">download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/b7d35" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/ed93f" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/lifestyle12pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="piece_title">
+                    IN THE SPRING OF THEIR LOVE
+                    </div>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="adjust_imagemode">
+                        -
+                    </div>
+                    <img class="lifestyle12 adjust">
+                    <div class="slides_gradiant_bottom" id="gradiant">
+                    </div>
+                    <div class="portraitwarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                               <!-- <a class="social_buttons" href="" target="_blank">download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/fbf01" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/371c9" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/lifestyle8pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="piece_title">
+                        MY MOTHER
+                    </div>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="adjust_imagemode">
+                        -
+                    </div>
+                    <img class="lifestyle5 adjust">
+                    <div class="slides_gradiant_bottom" id="gradiant">
+                    </div>
+                    <div class="portraitwarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                               <!-- <a class="social_buttons" href="" target="_blank">download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/cb955" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/6c39e" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/lifestyle4pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="piece_title">
+                        MR &amp; MRS
+                    </div>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="slides_gradiant_bottom">
+                    </div>
+                    <img class="lifestyle10 adjust">
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                               <!-- <a class="social_buttons" href="" target="_blank">download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/8db0e" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/541c1" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/lifestyle7pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>   
+                    <div class="piece_title">
+                        LONG LIVE PRINT
+                    </div>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="slides_gradiant_bottom">
+                    </div>
+                    <img class="lifestyle4 adjust">
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                              <!--  <a class="social_buttons" href="" target="_blank">download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/1806d" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/d8c5" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/lifestyle9pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="piece_title">
+                        THE SOFTEST OF KISSES
+                    </div>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="slides_gradiant_bottom">
+                    </div>
+                    <img class="lifestyle6 adjust">
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+
+            <!--<div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                                <a class="social_buttons" href="" target="_blank">download</a>
+                                <a class="social_buttons" href="http://hrefshare.com/2a994" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/6b66c" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/lifestyle10pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="piece_title">
+                        THE PROFESSOR AS A YOUNG MAN
+                    </div>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="adjust_imagemode">
+                        -
+                    </div>
+                    <img class="lifestyle8 adjust">
+                    <div class="slides_gradiant_bottom" id="gradiant">
+                    </div>
+                    <div class="portraitwarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>-->
+
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                              <!--  <a class="social_buttons" href="" target="_blank">download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/191f" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/fc2e" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/lifestyle11pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="piece_title">
+                    A RETURN TO CHILDHOOD
+                    </div>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="slides_gradiant_bottom">
+                    </div>
+                    <img class="lifestyle11 adjust">
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end of section -->
+
+         <div class="section">
+            <!--<div class="slide">
+                <div class="slide_main_container">
+                <div class="body_border_thinner">
+                </div>
+                <div class="slide_main_background_street">
+                </div>
+                    <div class="slide_main_wording_wrapper">
+                        <div class="slide_main_sense_container">
+                            <div class="sense_text">
+                                A SENSE<br>
+                                OF PRESENT
+                            </div>
+                        </div>
+                        <div class=
+                        "slide_main_category_and_description_container">
+                            <div class=
+                            "slide_main_category_container category_text">
+                                STREET &amp; CANDID
+                            </div>
+                            <div class=
+                            "slide_main_paragraph_container slide_main_paragraph_text">
+                            "Photographers deal in things which are continually
+                            vanishing and when they have vanished there is no
+                            contrivance on earth which can make them come back
+                            again." &mdash; Henri Cartier-Bresson, father of
+                            street photography. Street photography is a
+                            divisive topic amongst photographers but I believe it obtains the purest form
+                            of photography &mdash; the fleeting, unscripted
+                            present made permanent.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="body_border_thinner">
+                    </div>
+                    <div class="slide_main_background_street">
+                    </div>
+                    <div class="about_wrapper">
+                        <div class="about_category_text ">
+                        A SENSE OF<br>
+                        MOMENT
+                        </div>
+                        <div class=
+                        "slide_main_category_container category_text">
+                            STREET &amp; CANDID
+                        </div>
+                        <div class="about_text_large">
+                        "Photographers deal in things which are continually
+                        vanishing and when they have vanished there is no
+                        contrivance on earth which can make them come back
+                        again." &mdash; Henri Cartier-Bresson, father of
+                        street photography. Street photography is a
+                        divisive topic amongst photographers but I believe it obtains the purest form
+                        of photography &mdash; the fleeting, unscripted
+                        present made permanent.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                               <!-- <a class="social_buttons" href="" target="_blank">download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/3b5f8" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/dbcee" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/street1pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="slides_gradiant_bottom">
+                    </div>
+                    <div class="piece_title">
+                        THE OLD SAILOR &amp; HIS SONG
+                        <span class="piece_title_italic">
+                        &mdash;Tenby, Wales
+                        </span>
+                    </div>
+                    <img class="street1 adjust">
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                              <!--  <a class="social_buttons" href="" target="_blank">download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/fd713" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/ac327" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/street2pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="slides_gradiant_bottom">
+                    </div>
+                    <div class="piece_title">
+                        TENDING THE ROPES
+                        <span class="piece_title_italic">
+                        &mdash;Tenby, Wales
+                        </span>
+                    </div>
+                    <img class="street2 adjust">
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                              <!--  <a class="social_buttons" href="" target="_blank">download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/b4f40" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/eddaa" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/street3pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="piece_title">
+                        CATCH OF THE DAY
+                        <span class="piece_title_italic">
+                        &mdash;Porto Garibaldi, Italy
+                        </span>
+                    </div>
+                    <div class="adjust_imagemode">
+                        -
+                    </div>
+                    <img class="street3 adjust">
+                    <div class="slides_gradiant_bottom" id="gradiant">
+                    </div>
+                    <div class="portraitwarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                              <!--  <a class="social_buttons" href="" target="_blank">download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/f2ba7" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/74727" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/street4pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="piece_title">
+                        BICYCLE REPAIRMAN
+                        <span class="piece_title_italic">
+                        &mdash;Porto Garibaldi,Italy
+                        </span>
+                    </div>
+                    <div class="adjust_imagemode">
+                        -
+                    </div>
+                    <img class="street4 adjust">
+                    <div class="slides_gradiant_bottom" id="gradiant">
+                    </div>
+                    <div class="portraitwarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                              <!--  <a class="social_buttons" href="" target="_blank">download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/ab05b" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/1437" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/street5pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="piece_title">
+                        AT THE LIFEBOAT TAVERN
+                        <span class="piece_title_italic">
+                        &mdash;Tenby, Wales
+                        </span>
+                    </div>
+                    <img class="street5 adjust">
+                    <div class="slides_gradiant_bottom" id="gradiant">
+                    </div>
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                               <!-- <a class="social_buttons" href="" target="_blank">download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/1694b" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/98c9d" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/street6pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="slides_gradiant_bottom">
+                    </div>
+                    <div class="piece_title">
+                        HALLOWEEN ON THE SUBWAY
+                        <span class="piece_title_italic">
+                        &mdash;NYC, USA
+                        </span>
+                    </div>
+                    <img class="street6 adjust">
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                              <!--  <a class="social_buttons" href="" target="_blank">download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/53f3f" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/99a8" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/street7pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="slides_gradiant_bottom">
+                    </div>
+                    <div class="piece_title">
+                        EVENING AT THE NEW INN
+                        <span class="piece_title_italic">
+                        &mdash;The New Inn, Waterley Bottoms, UK
+                        </span>
+                    </div>
+                    <img class="street7 adjust">
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                               <!-- <a class="social_buttons" href="" target="_blank">download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/95b61" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/de0a" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/street8pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="slides_gradiant_bottom">
+                    </div>
+                    <div class="piece_title">
+                        &#39;MERICA
+                        <span class="piece_title_italic">
+                        &mdash;Times Square, NYC, USA
+                        </span>
+                    </div>
+                    <img class="street8 adjust">
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+
+            <!--<div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                                <a class="social_buttons" href="" target="_blank">download</a>
+                                <a class="social_buttons" href="http://hrefshare.com/1cd8f" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/886e5" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/street9pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="slides_gradiant_bottom">
+                    </div>
+                    <div class="piece_title">
+                        TAKING TIME TO REFLECT
+                        <span class="piece_title_italic">
+                        &mdash;Metropolitan Museum of Art, NYC, USA
+                        </span>
+                    </div>
+                    <img class="street9 adjust">
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>-->
+
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                               <!-- <a class="social_buttons" href="" target="_blank">download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/3af36" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/15b7" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/street10pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="slides_gradiant_bottom">
+                    </div>
+                    <div class="piece_title">
+                        WAITING FOR THE VAPORETTO
+                        <span class="piece_title_italic">
+                        &mdash;Venice, Italy
+                        </span>
+                    </div>
+                    <img class="street10 adjust">
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                              <!--  <a class="social_buttons" href="" target="_blank">download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/0f0de" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/f72f4" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/street11pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="slides_gradiant_bottom">
+                    </div>
+                    <div class="piece_title">
+                        AFTER THE PROCESSION
+                        <span class="piece_title_italic">
+                        &mdash;Gloucester Cathedral, Gloucester, UK
+                        </span>
+                    </div>
+                    <img class="street11 adjust">
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /section -->
+        <!-- end of section -->
+
+
+        <div class="section">
+            <!--<div class="slide">
+                <div class="slide_main_container ">
+                <div class="body_border_thinner">
+                </div>
+                <div class="slide_main_background_travel">
+                </div>
+                    <div class="left_yellow_vertical_bar">
+                    </div>
+
+                    <div class="slide_main_wording_wrapper">
+                        <div class="slide_main_sense_container">
+                            <div class="sense_text">
+                                A SENSE<br>
+                                OF PLACE
+                            </div>
+                        </div>
+
+
+                        <div class=
+                        "slide_main_category_and_description_container">
+                            <div class=
+                            "slide_main_category_container category_text">
+                                TRAVEL &amp; LANDSCAPE
+                            </div>
+
+
+                            <div class=
+                            "slide_main_paragraph_container slide_main_paragraph_text">
+                            I picked up my first serious camera before an
+                            excursion through Scottish highlands and small
+                            English towns. Though very different, both settings
+                            inspired me to be more intentional with my
+                            landscape photos. I want others to feel the stillness
+                            of a Tuscan morning walk and experience the
+                            unspeakable beauty of sunrise on the pale
+                            mountains.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="body_border_thinner">
+                    </div>
+                    <div class="slide_main_background_travel">
+                    </div>
+                    <div class="about_wrapper">
+                        <div class="about_category_text ">
+                        A SENSE OF<br>
+                        DISCOVERY
+                        </div>
+                        <div class=
+                        "slide_main_category_container category_text">
+                            TRAVEL &amp; LANDSCAPE
+                        </div>
+                        <div class="about_text_large">
+                            I picked up my first serious camera before an
+                            excursion through Scottish highlands and small
+                            English towns. Though very different, both settings
+                            inspired me to be more intentional with my
+                            landscape photos. I want others to feel the stillness
+                            of a Tuscan morning walk and experience the
+                            unspeakable beauty of sunrise on the pale
+                            mountains.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                               <!-- <a class="social_buttons" href="/img/background/dawnworldsedge_background.jpg" download>download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/e3f76" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/a600" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/travel1pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav> 
+                    
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a>  
+
+                    <div class="piece_title">
+                        VAL GARDENA AT DAWN
+                        <span class="piece_title_italic">
+                            &mdash; Dolomites, Italy
+                        </span>
+                    </div>
+                    <div class="slides_gradiant_bottom">
+                    </div>
+                    <img class="travel11 adjust">
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                              <!--  <a class="social_buttons" href="/img/background/morningtuscan_background.jpg" download>download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/12c89" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/179df" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/travel12pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a>            
+                    <div class="piece_title">
+                        SNOWY TEMPLE
+                        <span class="piece_title_italic">
+                        &mdash;Furman University, SC
+                        </span>
+                    </div>
+                    <div class="slides_gradiant_bottom">
+                    </div>
+                    <img class="travel12 adjust">
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                               <!-- <a class="social_buttons" href="/img/background/palemountains_background.jpg" download>download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/70d06" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/74706" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/travel3pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a>            
+                    <div class="piece_title">
+                        THE REEDY RIVER
+                        <span class="piece_title_italic">
+                        &mdash; Greenville, SC, USA
+                        </span>
+                    </div>
+                    <div class="slides_gradiant_bottom">
+                    </div>
+                    <img class="travel10 adjust">
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                               <!-- <a class="social_buttons" href="/img/background/summerevening_background.jpg" download>download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/fa980" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/431cf" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/travel5pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                <a href="#" class="slide_menuicon_wrapper">
+                        share
+                </a>
+                <div class="slides_gradiant_bottom">
+                </div>
+                <div class="piece_title">
+                    SUMMER EVENING CATCH
+                    <span class="piece_title_italic">
+                    &mdash; Pisgah National Forest, NC, USA
+                    </span>
+                </div>
+                <img class="travel3 adjust">
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+            </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                               <!-- <a class="social_buttons" href="/img/background/mightylangkofel_background.jpg" download>download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/195955" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/95451" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/travel10pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a>
+                    <div class="slides_gradiant_bottom">
+                    </div>
+                    <div class="piece_title">
+                    MIGHTY LANGKOFEL
+                        <span class="piece_title_italic">
+                        &mdash; Dolomites, Italy
+                        </span>
+                    </div>
+                    <img class="travel8 adjust">
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                              <!--  <a class="social_buttons" href="/img/background/morningtuscan_background.jpg" download>download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/317b8" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/a36f" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/travel2pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a>            
+                    <div class="piece_title">
+                        MORNING TUSCAN WALK
+                        <span class="piece_title_italic">
+                        &mdash;Castello di Saltemnano, Italy
+                        </span>
+                    </div>
+                    <div class="slides_gradiant_bottom">
+                    </div>
+                    <img class="travel6 adjust">
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                               <!-- <a class="social_buttons" href="/img/background/newyork_background.jpg" download>download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/06f46" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/76978" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/travel4pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a>
+                    <div class="slides_gradiant_bottom">
+                    </div>
+                    <div class="piece_title">
+                        NEW YORK MINUTE
+                        <span class="piece_title_italic">
+                        &mdash; NYC, USA
+                        </span>
+                    </div>
+                    <img class="travel2 adjust">
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                               <!-- <a class="social_buttons" href="/img/background/eveningfalls_background.jpg" download>download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/62db0" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/2e3b" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/travel6pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a>
+                    <div class="slides_gradiant_bottom">
+                    </div>
+                    <div class="piece_title">
+                        EVENING ON LAKE JOCASSEE
+                        <span class="piece_title_italic">
+                        &mdash; Jump Off Rock, SC, USA
+                        </span>
+                    </div>
+                    <img class="travel4 adjust">
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                               <!-- <a class="social_buttons" href="/img/background/morningmist_background.jpg" download>download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/48cc9" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/1351d" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/travel7pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="slides_gradiant_bottom">
+                    </div>
+                    <div class="piece_title">
+                        MORNING MIST ON THE SELLA GROUP
+                        <span class="piece_title_italic">
+                        &mdash; Dolomites, Italy
+                        </span>
+                    </div>
+                    <img class="travel1 adjust">
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                               <!-- <a class="social_buttons" href="/img/background/macchina_background.jpg" download>download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/fa2bb" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/e77b1" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/travel8pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a>
+                    <div class="slides_gradiant_bottom">
+                    </div>         
+                    <div class="piece_title">
+                    MACCHINA ANTICO
+                        <span class="piece_title_italic">
+                        &mdash; Via Porta D&#39;Amore, Ferrara, Italy
+                        </span>
+                    </div>
+                    <img class="travel5 adjust">
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                               <!-- <a class="social_buttons" href="/img/background/sienacathedral_background.jpg" download>download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/4e79c" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/cfad7" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/travel9pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a>
+                    <div class="slides_gradiant_bottom">
+                    </div>      
+                    <div class="piece_title">
+                    SIENA CATHEDRAL
+                        <span class="piece_title_italic">
+                        &mdash; Siena, Italy
+                        </span>
+                    </div>
+                    <img class="travel7 adjust">
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                    <div class="loading">
+                    </div>
+                    <nav class="drop_down_menu">
+                        <div class="collapse_social_menu">
+                            <div class="social_actions">
+                               <!-- <a class="social_buttons" href="/img/background/moonrisetenby_background.jpg" download>download</a> -->
+                                <a class="social_buttons" href="http://hrefshare.com/1a724" target="_blank">facebook</a> 
+                                <a class="social_buttons" href="http://hrefshare.com/cac5" target="_blank">twitter</a> 
+                                <a class="social_buttons" href="http://bit.ly/travel11pin" target="_blank">pinterest</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a>
+                    <div class="slides_gradiant_bottom">
+                    </div>
+                    <div class="piece_title">
+                     MOONRISE OVER TENBY HARBOR
+                        <span class="piece_title_italic">
+                        &mdash; Tenby, Wales
+                        </span>
+                    </div>
+                    <img class="travel9 adjust">
+                    <div class="landscapewarning">
+                    rotate device
+                    </div>
+                </div>
+            </div>           
+        </div>
+        <!-- end of section -->
+
+
+        <div class="section">
+            <!--<div class="slide">
+                <div class="slide_main_container">
+                <div class="body_border_thinner">
+                </div>
+                    <div class="slide_main_background_purpose">
+                    </div>
+                    <div class="slide_main_wording_wrapper">
+                        <div class="slide_main_sense_container">
+                            <div class="sense_text">
+                                A SENSE<br>
+                                OF PURPOSE
+                            </div>
+                        </div>
+                        <div class="slide_main_category_and_description_container">
+                            <div class="slide_main_category_container category_text">
+                                PROJECTS &amp; WRITING
+                            </div>
+                            <div class=
+                            "slide_main_paragraph_container slide_main_paragraph_text">
+                            A cohesive series of photos allows a deeper
+                            and broader contemplation of the human experience. Marry the photos to thoughtful writing and you have
+                            one of the most powerful narrative mediums. This
+                            story telling aspect of photography is a recent
+                            passion of mine and one I hope to expand on. In
+                            this section you will find both strictly photo
+                            projects and those that mix photography and
+                            writing.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="body_border_thinner">
+                    </div>
+                    <div class="slide_main_background_purpose">
+                    </div>
+                    <div class="about_wrapper">
+                        <div class="about_category_text ">
+                        A SENSE OF<br>
+                        PURPOSE
+                        </div>
+                        <div class=
+                        "slide_main_category_container category_text">
+                            PROJECTS &amp; WRITING
+                        </div>
+                        <div class="about_text_large">
+                            A cohesive series of photos allows a deeper
+                            and broader contemplation of the human experience. Marry the photos to thoughtful writing and you have
+                            one of the most powerful narrative mediums. This
+                            story telling aspect of photography is a recent
+                            passion of mine and one I hope to expand on. In
+                            this section you will find both strictly photo
+                            projects and those that mix photography and
+                            writing.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                   <nav class="drop_down_menu">
+                       <div class="collapse_social_menu">
+                           <div class="social_actions">
+                              <!-- <a class="social_buttons" href="/img/background/moonrisetenby_background.jpg" download>download</a> -->
+                               <a class="social_buttons" href="http://hrefshare.com/081bd" target="_blank">facebook</a> 
+                               <a class="social_buttons" href="http://hrefshare.com/eabd" target="_blank">twitter</a> 
+                               <a class="social_buttons" href="http://bit.ly/projects1pin" target="_blank">pinterest</a>
+                           </div>
+                       </div>
+                    </nav>
+                    <!--<div class="slides_gradiant_bottom_heavy_right">
+                    </div>
+                    <div class="slides_gradiant_bottom_left">
+                    </div>-->
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="slides_gradiant_bottom_heavy">
+                    </div>
+                    <img class="projects1">
+                        <div class="projects_info">
+                            <div class="category_text text_leftalign">
+                                <span class="text_leftalign">DOWNTOWN GREENVILLE, SC</span>
+                            </div>
+                            <div class="projects_info_text">
+                                The crowning achievement for Greenville, SC is
+                                their downtown. In 2014 I had the privilidge of working with the
+                                mayor&#39;s office to capture downtown Greenville as a human space and not just beautiful architecture and
+                                nature. The resulting set of photos is used for
+                                presentations about Greenville given to other
+                                mayors looking to revitalize their own cities.
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+
+
+            <div class="slide">
+                <div class="slide_main_container">
+                    <div class="loading">
+                    </div>
+                   <nav class="drop_down_menu">
+                       <div class="collapse_social_menu">
+                           <div class="social_actions">
+                              <!-- <a class="social_buttons" href="/img/background/moonrisetenby_background.jpg" download>download</a> -->
+                               <a class="social_buttons" href="http://hrefshare.com/f248c" target="_blank">facebook</a> 
+                               <a class="social_buttons" href="http://hrefshare.com/10ca" target="_blank">twitter</a> 
+                               <a class="social_buttons" href="http://bit.ly/projects2pin" target="_blank">pinterest</a>
+                           </div>
+                       </div>
+                    </nav>
+                    <!--<div class="slides_gradiant_bottom_heavy_right">
+                    </div>
+                    <div class="slides_gradiant_bottom_left">
+                    </div>-->
+                    <a href="#" class="slide_menuicon_wrapper">
+                        share
+                    </a> 
+                    <div class="slides_gradiant_bottom">
+                    </div>
+                    <img class="projects2">
+                        <div class="projects_info">
+                            <div class="category_text text_leftalign">
+                                <span class="text_leftalign">THE BURNING MOUNTAIN</span>
+                            </div>
+                            <div class="projects_info_text">
+                                The Dolomites of nothern Italy are a rare breed of
+                                mountains. Their magnificient peaks hide a bloody
+                                past and shelter a unique breed of people. This
+                                travel memoir starts in stormy Verona, Italy and
+                                ends on a windy hilltop as the sun rises on the Sella group.<br>
+                                <br>
+                                Currently seeking publication.
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+
+            <!-- <div class="slide loading">
+                <div class="slides_gradiant_bottom">
+                </div>
+                <div class="projects2">
+                    <div class="slides_gradiant_bottom">
+                    </div>
+                    <div class="projects_info">
+                        <div class="category_text">
+                            TETBURY WOOL SACK RACE
+                        </div>
+                        <div class="projects_info_text">
+
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+        <!-- end of section -->
+
+
+        <div class="section fp-auto-height nofittosection">
+            <div class="slide">
+                <div class="connect_main_container">
+                <div class="footer_border_thinner">
+                </div>
+                <!--<div class="slide_main_background_connect">
+                </div>-->
+                    <!--<div class="connect_photo_container">
+                        <div class="connector_text">
+                            <span class="connector_text_large">I AM DEDICATED TO THE ART AND CRAFT</span> of photographing human stories and human
+                            experiences. I started with a few manual-focus
+                            lenses on a well used Sony Nex5N. It took
+                            a long time to feel comfortable with the technical
+                            side of photography but I am glad I stuck with it.
+                            I understand the camera as a precision tool and
+                            that understanding gives me confidence as I work.
+                            The Nex5N is long gone as are most of the manual
+                            lenses (I&#39;ll never part with my Canon FDn 50mm
+                            1.4) but my passion and skill are here to stay.
+                            I&#39;m currently available for <span class=
+                            "FFFF00_fontcolor normal_font">LIFESTYLE</span>,
+                            <span class=
+                            "FFFF00_fontcolor normal_font">WEDDING</span>, and
+                            <span class=
+                            "FFFF00_fontcolor normal_font">PORTRAITURE</span>.
+                            I&#39;m particularly interested in pairing my work
+                            with <span class=
+                            "FFFF00_fontcolor normal_font">WRITTEN
+                            PIECES</span> that deal with worthwhile topics and
+                            interesting stories.<br> I currently am located in beautiful <span class=
+                            "FFFF00_fontcolor normal_font">GREENVILLE, SC</span>.
+                        </div>
+                        <div class="connector_text_mobile">
+                            <span class="connector_text_large">THE JOY OF A
+                            CHILD&#39;S FIRST BIRTHDAY</span> and the
+                            majesty of mighty Langkofel are why I am dedicated to the art and
+                            craft of photographing human stories and human
+                            experiences. I&#39;m currently available for <span class=
+                            "FFFF00_fontcolor normal_font">LIFESTYLE</span>,
+                            <span class=
+                            "FFFF00_fontcolor normal_font">WEDDING</span>, and
+                            <span class=
+                            "FFFF00_fontcolor normal_font">PORTRAITURE</span>.
+                            I&#39;m particularly interested in pairing my work
+                            with <span class=
+                            "FFFF00_fontcolor normal_font">WRITTEN
+                            PIECES</span> that deal with worthwhile topics and
+                            interesting stories.<br> I currently am located in beautiful <span class=
+                            "FFFF00_fontcolor normal_font">GREENVILLE, SC</span>.
+                        </div>
+                    </div>-->
+
+                    <!--<div class="connect_text_container">
+                        <div class="social_buttons_connect_info_container"> 
+                        </div>
+                        <div class="connector_header">
+                            CONNECT
+                        </div>
+                        <a class="social_buttons_connect" href="mailto:hello@davidsiglinphotography.com?subject=inquiry">email</a>
+                        <a class="social_buttons_connect" href="https://www.instagram.com/dsiglin/" target="_blank">instagram</a> 
+                        <a class="social_buttons_connect" href="https://500px.com/davidsiglin" target="_blank">500px</a> 
+                        <a class="social_buttons_connect" href="https://www.pinterest.com/siglin/my-photographic-work/" target="_blank">pinterest</a> 
+                        <div class="social_buttons_connect">864.386.8800</div>
+                    </div>-->
+                    <div class="about_top_margin">
+                    </div>
+                    <div class="me">
+                    </div>
+                    <div class="colophon_text_container">
+                        <div class="sense_text">
+                            ABOUT &amp; <br/>CONTACT
+                        </div>
+                    </div>
+                    <div class="colophon_text_container">
+                        <div class="colophon_text">
+                            I am dedicated to the art and craft of telling human stories and documenting human experiences &mdash; the human element inspires and informs my work. I started with a few manual-focus lenses on a well used Sony Nex5N which laid a solid technical foundation and gave me freedom to build my artistic expression. The Nex5N is long gone as are most of the manual lenses (I&#39;ll never part with my Canon FDn 50mm 1.4) but my passion and skill are here to stay. I&#39;m currently available for <span class="normal_font">LIFESTYLE, WEDDING,</span> and <span class="normal_font">PORTRAITURE</span>. 
+                        </div>
+                    </div>
+                    <div class="colophon_break">
+                    </div>
+                    <div class="colophon_text_container">
+                        <div class="colophon_text">
+                             <span class="connector_text_large">PRICING</span> As of Spring 2016 &mdash; <span class="normal_font">WEDDINGS</span> start at $1,500. <span class="normal_font">ENGAGEMENT</span> sessions start at $300. <span class="normal_font">BRIDAL</span> portraits start at $300. <span class="normal_font">FAMILY</span> sessions start at $200.
+                        </div>
+                    </div>
+                    <div class="colophon_break">
+                    </div>
+                    <div class="colophon_text_container">
+                        <div class="colophon_text">
+                            <span class="connector_text_large">CONNECT</span> The best way to reach me is via <a class="normal_font_link" href="mailto:hello@davidsiglinphotography.com?subject=inquiry">EMAIL</a> but you can also check out my <a class="normal_font_link" href="https://500px.com/davidsiglin" target="_blank">500PX</a>, scroll through my <a class="normal_font_link" href="https://www.instagram.com/dsiglin/" target="_blank">INSTAGRAM</a> feed, or check out my pins on <a class="normal_font_link" href="https://www.pinterest.com/siglin/my-photographic-work/" target="_blank">PINTEREST</a>.
+                        </div>
+                    </div>
+                    <div class="colophon_break">
+                    </div>
+                    <div class="colophon_text_container">
+                        <div class="colophon_text">
+                            <span class="connector_text_large">THANKS &amp; COLOPHON</span> This site would not be possible without the wonderful fullpage.js plugin by <span class="normal_font">ÁLVARO TRIGO</span>, and the useability tests and feedback provided by <span class="normal_font">AARON DICKEY</span> and <span class="normal_font">DAN DIETZ</span>. I&#39;m also indebted to <span class="normal_font">DAN JEFFORDS</span> for letting me field numerous questions.
+                        </div>
+                    </div>
+                    <div class="colophon_break">
+                    </div>
+                    <div class="colophon_text_container">
+                        <div class="colophon_text">
+                            <span class="normal_font">PLAYFAIR DISPLAY</span> by Claus Eggers Sørensen is the typeface used for section titles. Sørensen has this to say about the typeface: "Playfair is a transitional design. From the time of enlightenment in the late 18th century, the broad nib quills were replaced by pointed steel pens. This influenced typographical letterforms to become increasingly detached from the written ones. Developments in printing technology, ink, and paper making, made it possible to print letterforms of high contrast and delicate hairlines.
+
+                            As the name indicates, Playfair Display is well suited for titling and headlines. It has an extra large x-height and short descenders. . . Being a transitional design, stylistically Playfair can accompany Georgia, where Georgia is used for body text."
+                        </div>
+                    </div>
+                    <div class="signature">
+                    </div>
+                    <div class="copyright_text_container">
+                        <div class="copyright_text">
+                            &copy;2016 David Siglin unless otherwise noted.
+                        </div>
+                    </div>
+
+                    <div class="about_bottom_margin">
+                    </div>
+                        <!--<div class="social_buttons_connect_small">
+                            Currently located in beautiful <span class="FFFF00_fontcolor_small">GREENVILLE, SC</span>
+                        </div>-->
+                    </div>
+                </div>
+                <!--connect main container -->
+            </div>
+            <!--slide-->
+        </div>
+        <!--section-->
+    </div>
+    <!-- fullpage ID -->
+</body>
+<link href="css/backgrounds.css" rel="stylesheet" type="text/css">
+</html>
