@@ -1,7 +1,8 @@
-A simple and easy to use plugin to create fullscreen scrolling websites (also known as single page websites or onepage sites). It allows the creation of fullscreen scrolling websites, as well as adding some landscape sliders inside the sections of the site.
+This is my take on a full-viewport, responsive UI photography portfolio site. It's free for the taking and remaking under the MIT License. It relies on Fullpage.js, a wonderful jquery plugin by Alvaro Trigo. The version of Fullpage.js included in this site is slightly modified but if you wish to use the vanilla version of Fullpage.js that should work fine. 
 
-Thanks:
-This site would not be possible without the wonderful fullpage.js plugin by ÁLVARO TRIGO, and the useability tests and feedback provided by AARON DICKEY and DAN DIETZ. I'm also indebted to DAN JEFFORDS for letting me field numerous questions. 
+Besides Alvaro I want to thank Aaron Dickey and Dan Dietz for their feedback on the UI of the site. I'm also indebted to Dan Jeffords for letting me field numerous javascript questions.
+
+Oh, for for the image slideshow on the first section I used Backstretch. For the animation on visibility I used ViewportChecker.
 
 (The MIT License)
 
