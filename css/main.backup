@@ -363,7 +363,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001c1c1c', e
 
 .signature_home {
 	position: absolute;
-	background-image: url("/img/signature.png");
+	background-image: url("img/signature.png");
 	background-position: left bottom;
 	background-repeat: no-repeat;
 	background-size: contain;
