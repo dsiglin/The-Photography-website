@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>-->
+
+    <script src="js/jquery.fullPage.js" type="text/javascript"></script>
+    <link href="css/jquery.fullPage.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript">
+            
+        $(document).ready(function() {
+                $('#fullpage').fullpage({
+            scrollingSpeed: 700,
+            fitToSection: false,
+            css3: true,
+            scrollBar: false,
+            autoScrolling: true,
+            touchSensitivity: 7,
+            controlArrows: true,
+            recordHistory: true,
+            keyboardScrolling: true,
+            animateAnchor: false,
+            sectionSelector: '.section',
+            slideSelector: '.slide',
+            slidesNavigation: true,
+            slidesNavPosition: 'bottom',
+            sectionsColor : ['#bf6356', '#32cbdb', '#82c0e7', '#FFFF00', '#49e8ae',],
+            verticalCentered: false,
+            menu: '#mymenu',            
+            }); 
+        }); 
+    </script>
+
+<body>
+    <div id="fullpage">
+        <div class="section">
+            <div class="slide">
+                <h2>slide1</h2>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="slide">
+                <h2>slide2a</h2>
+            </div>
+            <div class="slide">
+                slide2b
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="slide">
+                <h2>slide3a</h2>
+            </div>
+            <div class="slide">
+                slide3b
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="slide">
+                <h2>slide4a</h2>
+            </div>
+            <div class="slide">
+                slide4b
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="slide">
+                <h2>slide5a</h2>
+            </div>
+            <div class="slide">
+                slide5b
+            </div>
+        </div>
+
+    </div>
+    <!-- fullpage ID -->
+</body>
+</html>
