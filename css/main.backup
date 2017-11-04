@@ -98,7 +98,7 @@
 
 .loading {
     background-repeat: no-repeat;
-    background-image: url("../img/loading.png);
+    background-image: url(../img/loading.png);
     background-position: center center;
     background-size: auto;
     z-index: -5;
@@ -298,7 +298,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001c1c1c', e
 
 .cover_image {
     background-repeat: no-repeat;
-    /*background-image: url("../img/cover1.jpg);*/
+    /*background-image: url(../img/cover1.jpg);*/
 /* background-position: 200 400; */
     background-position: center bottom;
     background-size: cover;
@@ -781,7 +781,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001c1c1c', e
 .me {
     background-repeat: no-repeat;
 /* background-position: 200 400; */
-    background-image: url("../img/me.png);
+    background-image: url(../img/me.png);
     background-position: center center;
     background-size: contain;
     position: absolute;
@@ -794,7 +794,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001c1c1c', e
 
 .signature {
     background-repeat: no-repeat;
-    background-image: url("../img/signature.png);
+    background-image: url(../img/signature.png);
     background-position: center center;
     background-size: contain;
     width: 100%;
@@ -1447,7 +1447,7 @@ a.social_buttons_connect {
 .me {
     background-repeat: no-repeat;
 /* background-position: 200 400; */
-    background-image: url("../img/me.png);
+    background-image: url(../img/me.png);
     background-position: center center;
     background-size: contain;
     position: absolute;
